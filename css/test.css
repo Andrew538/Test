@@ -1,0 +1,197 @@
+*,
+*:before,
+*:after 
+/* обнуление */
+{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;}
+
+body{
+    max-width: 1280px;
+    max-height: 1628px;
+    
+}
+.app {
+    max-width: 968px;
+    max-height: 1628px;
+    margin: 0 auto;
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(224px, 224px));
+    grid-template-rows: repeat(32, 368px);
+    column-gap: 24px;
+    row-gap: 24px;
+} 
+
+.h1 {
+    display: block;
+    height: 25px;
+    margin-left: 150px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    
+    }
+/* адаптация при ширине 520px */
+    @media (max-width: 520px){
+    .h1, .app {
+        width: 100%;
+        margin: 20px 0px 10px 30px;
+        font-size: small;
+     
+        
+    }
+/* адаптация при ширине 460px */
+    @media (max-width: 460px) {
+        .app, h1 {
+            margin-left: 20px;
+            padding-left: 50px;
+        }
+    }
+
+}
+.card {
+     display: grid;
+    grid-template-rows: 260px 108px;
+    }
+
+
+
+.card_img{
+    position: relative;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;  
+}
+.card_img img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+	
+}
+
+.like__icon {
+    background-image: url(../icon/like.png);
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    margin-left: 188px;
+    margin-top: 202px;
+}
+.like__icon:hover{
+    background-image: url(../icon/grin-like.png);
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    margin-left: 188px;
+    margin-top: 202px;
+    transition: all 2s ease;
+    border: 2px dotted red;
+}
+.delivery__icon {
+    background-image: url(../icon/znachok\ dostavki.png);
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    margin-left: 162px;
+    margin-top: 260px;
+    
+}
+.delivery__icon:hover {
+    background-image: url(../icon/znachok\ dostavki\ grin.png) ;
+    transition:  all 2s ease;
+}
+.title {
+    margin: 310px 0px 12px 12px;
+    position: absolute;
+    width: 200px;
+    height: 16px;
+    font-size: 12px;
+    font-family: Ubuntu;
+    font-style: normal;
+    }
+.compare__icon {
+    background-image: url(../icon/sravnit.png);
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    margin-left: 188px;
+    margin-top: 170px;
+    
+}
+.compare__icon:hover {
+    background-image: url(../icon/sravnitGRIN.png);
+    transition:  all 2s ease;
+}
+.deal__icon {
+    background-image: url(../icon/znachoksdelk\ Wi.png);
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    margin-left: 188px;
+    margin-top: 262px;
+
+}
+.deal__icon:hover {
+    background-image: url(../icon/znachoksdelki\ grin.png);
+    transition:  all 2s ease;
+}
+
+.oldPrice {
+    position: absolute;
+    line-height: 16px;
+    color: #5A5A5A;
+    margin-top: 260px;
+    margin-left: 20px;
+    font-family: 'Ubuntu';
+    font-weight: normal;
+    font-size: 14px;
+    text-decoration: line-through;
+    
+   
+
+}
+.price {
+    position: absolute;
+    color:  #2C2C2C;
+    margin-top: 279px;
+    margin-left: 20px;
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    font-size: 22px;
+}
+.locality {
+    position: absolute;
+    color: #2C2C2C;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    margin: 342px 0px 12px 12px;
+}
+.date {
+    position: absolute;
+    margin:342px 0 15px 145px;
+    color: #8F8F8F;
+}
+.message{
+    position: absolute;
+    width: 94px;
+    height: 24px;
+    margin:  -371px 0px 0px 67px;
+    
+}
+.message:hover{
+    background-image: url(../icon/message.png);
+    transition:  all 2s ease;
+}
+.yellow{
+    width: 224px;
+    height: 108px;
+    margin: -391px 0px 0px 0px;
+}
